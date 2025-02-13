@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from tiktokadmink.models import CookieFileORM
+from infrastructure.models import CookieFileORM
 
 class Command(BaseCommand):
     def handle(self, *args, **kwargs):

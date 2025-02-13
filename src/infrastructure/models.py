@@ -61,9 +61,7 @@ class TiktokBreakoutSongsORM(models.Model):
         verbose_name = "Взлетающие песни"
         verbose_name_plural = "Взлетающие песни"
 
-from django.db import models
-
-class CookieFileORM(models.Model):
+class TikTokSessionORM(models.Model):
     name = models.CharField(max_length=255)
     content = models.TextField()
     uploaded_at = models.DateTimeField(auto_now_add=True)

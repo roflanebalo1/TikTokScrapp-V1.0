@@ -5,10 +5,10 @@ from .models import TiktokBreakoutSongsORM
 
 @admin.register(TiktokHashtagsORM)
 class HashtagAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'created_at', 'updated_at')  # Поля, отображаемые в списке записей
-    list_filter = ('id', 'created_at', 'updated_at')  # Поля для фильтрации
-    search_fields = ('name', 'value')  # Поля для поиска
-    ordering = ('-created_at',)  # Сортировка 
+    list_display = ('id', 'name', 'created_at', 'updated_at') 
+    list_filter = ('id', 'created_at', 'updated_at') 
+    search_fields = ('name', 'value') 
+    ordering = ('-created_at',) 
 
 @admin.register(TiktokSongsORM)
 class SongAdmin(admin.ModelAdmin):
